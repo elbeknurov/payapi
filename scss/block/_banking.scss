@@ -1,0 +1,55 @@
+.banking {
+  margin-bottom: 96px;
+  &__divs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+  &__img {
+    margin-bottom: 32px;
+  }
+  .banking__title {
+    margin-bottom: 16px;
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.138462px;
+    color: #36536b;
+  }
+  .banking__text {
+    width: 350px;
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.115385px;
+    color: #6c8294;
+  }
+}
+@media only screen and(max-width:1125px) {
+  .banking {
+    .banking__text {
+      width: 223px;
+    }
+  }
+}
+@media only screen and(max-width:760px) {
+  .banking {
+    .banking__divs {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
+}
+@media only screen and(max-width:500px) {
+  .banking {
+    .banking__text {
+      width: 100%;
+    }
+  }
+}

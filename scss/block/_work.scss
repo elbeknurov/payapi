@@ -1,0 +1,140 @@
+.work {
+  display: flex;
+  max-width: 100%;
+  min-height: 472px;
+  align-items: center;
+  background-color: #1b262f;
+  margin-bottom: 150px;
+
+  &__div {
+    display: flex;
+    // flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 130px;
+  }
+
+  &__item {
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369231px;
+    color: #fbfcfe;
+    margin-bottom: 24px;
+  }
+  &__text {
+    margin-bottom: 32px;
+    max-width: 445px;
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: #fbfcfe;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+  }
+  &__btn {
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.115385px;
+    color: #fff;
+    border: 1px solid #fbfcfe;
+    border-radius: 24px;
+    padding: 15px 32px;
+    background-color: transparent;
+    transition: all 0.2s linear;
+    cursor: pointer;
+
+    &:hover {
+      color: #1b262f;
+      background-color: #fbfcfe;
+    }
+    &:active {
+      background-color: #838ea5;
+    }
+  }
+
+  &__right {
+    display: flex;
+    gap: 46px;
+  }
+  &__tesla {
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    gap: 50px;
+  }
+  &__microsoft {
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    gap: 28px;
+  }
+  &__hp {
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+@media only screen and(max-width:1075px) {
+  .work {
+    &__div {
+      gap: 20px;
+    }
+  }
+}
+@media only screen and (max-width: 945px) {
+  .work {
+    &__div {
+      display: flex;
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+    &__item {
+      font-size: 32px;
+      line-height: 36px;
+    }
+    &__text {
+      width: 326px;
+    }
+  }
+}
+
+@media only screen and (max-width: 555px) {
+  .work {
+    padding: 88px 116px;
+    &__right {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__hp {
+      flex-direction: row;
+    }
+  }
+}
+@media only screen and (max-width: 350px) {
+  .work {
+    &__text {
+      font-size: 15px;
+      line-height: 28px;
+      width: 321px;
+      margin-bottom: 60px;
+    }
+
+    &__right {
+      gap: 30px;
+    }
+    &__hp {
+      gap: 30px;
+      margin-bottom: 58px;
+    }
+  }
+}
